@@ -1,7 +1,8 @@
 # Base image that bundles AWS Lambda Python 3.11 image with some middleware functions
 # FROM base-eval-tmp
-FROM ghcr.io/lambda-feedback/baseevalutionfunctionlayer:3.11
-# FROM rabidsheep55/python-base-eval-layer
+FROM ghcr.io/lambda-feedback/baseevalutionfunctionlayer:pr-13-3.11
+# FROM ghcr.io/lambda-feedback/baseevalutionfunctionlayer:3.11  #- relative import error
+# FROM rabidsheep55/python-base-eval-layer                      #- python 3.8
 
 WORKDIR /app
 
