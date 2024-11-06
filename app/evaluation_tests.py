@@ -25,11 +25,11 @@ class TestEvaluationFunction(unittest.TestCase):
     as it should.
     """
 
-    # def test_returns_is_correct_true(self):
-    #     response, answer, params = None, None, Params()
-    #     result = evaluation_function(response, answer, params)
+    def test_returns_is_correct_true(self):
+        response, answer, params = None, None, Params()
+        result = evaluation_function(response, answer, params)
 
-    #     self.assertEqual(result.get("is_correct"), True)
+        # self.assertEqual(result.get("is_correct"), True)
 
 
 if __name__ == "__main__":
