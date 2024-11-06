@@ -28,8 +28,8 @@ RUN chmod 644 $(find . -type f)
 RUN chmod 755 $(find . -type d)
 
 # The entrypoint for AWS is to invoke the handler function within the app package
-ENTRYPOINT ["/usr/local/bin/aws-lambda-rie", "/var/runtime/bootstrap"]
+# ENTRYPOINT ["/usr/local/bin/aws-lambda-rie", "/var/runtime/bootstrap"]
 
-ENV PYTHONPATH="/"
+# ENV PYTHONPATH="/"
 
 CMD ["/app/app.handler"]
